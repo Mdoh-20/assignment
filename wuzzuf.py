@@ -3,16 +3,10 @@ import requests
 from bs4 import BeautifulSoup
 from itertools import zip_longest
 
-job_title = []
-loca = []
-fall_part_time = []
-req = []
-links = []
-companies = []
-salary = []
-requirements = []
+job_title, loca, fall_part_time, req, links, companies = [], [], [], [], [], []
 
 page_num = 0
+
 while True:
     try:
         start_link = f'https://wuzzuf.net/search/jobs/?a=hpb&q=python&start={page_num}'
